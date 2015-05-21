@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class TaskController {
 
     @RequestMapping(value = "/tasks", method = RequestMethod.GET)
-    public String getTasksPage() {
+    public String displayTasks() {
         return "tasksPage";
     }
 }
