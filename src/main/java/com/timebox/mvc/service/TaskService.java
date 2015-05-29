@@ -5,6 +5,8 @@ import com.timebox.mvc.mappers.TaskMapper;
 import com.timebox.mvc.model.Task;
 import org.apache.ibatis.session.SqlSession;
 
+import java.util.List;
+
 public class TaskService {
 
     private SqlSession sqlSession;
@@ -23,4 +25,19 @@ public class TaskService {
         taskMapper.insert(task);
         sqlSession.commit();
     }
+
+    public Task getTaskById(long id) {
+        return taskMapper.getById(id);
+    }
+
+    public List<Task> getTasks() {
+        return taskMapper.findAll();
+    }
+
+    public void deleteAll() {
+        taskMapper.deleteAll();
+        sqlSession.commit();
+    }
+
+
 }
