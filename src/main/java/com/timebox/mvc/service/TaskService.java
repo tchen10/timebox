@@ -30,7 +30,7 @@ public class TaskService {
         return taskMapper.getById(id);
     }
 
-    public List<Task> getTasks() {
+    public List<Task> findAll() {
         return taskMapper.findAll();
     }
 

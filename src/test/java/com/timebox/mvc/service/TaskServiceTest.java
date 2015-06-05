@@ -8,14 +8,10 @@ import org.junit.Test;
 import org.mockito.ArgumentMatcher;
 import org.mockito.Mock;
 
-import java.util.List;
-
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.*;
 import static org.mockito.Matchers.argThat;
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyNoMoreInteractions;
 import static org.mockito.Mockito.when;
 import static org.mockito.MockitoAnnotations.initMocks;
 
@@ -55,7 +51,7 @@ public class TaskServiceTest {
 
     @Test
     public void shouldGetAllTasks() {
-        taskService.getTasks();
+        taskService.findAll();
         verify(taskMapper).findAll();
     }
 
