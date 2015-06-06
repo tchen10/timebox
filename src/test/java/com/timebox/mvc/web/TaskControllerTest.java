@@ -45,12 +45,10 @@ public class TaskControllerTest {
         BindingResult bindingResult = mock(BindingResult.class);
         Task task = new Task("", "");
 
-        ModelAndView modelAndView = taskController.add(task, bindingResult);
+        String view = taskController.add(task, bindingResult);
 
-        assertEquals("tasks", modelAndView.getViewName());
+        assertEquals("redirect:/tasks", view);
         verify(mockTaskService).submitTask(task);
-
     }
-
 
 }
