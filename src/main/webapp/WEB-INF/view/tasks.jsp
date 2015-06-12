@@ -1,6 +1,4 @@
-<html>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ include file="partials/header.jsp" %>
 <c:set var="pageTitle" scope="request" value="Tasks"/>
 <body>
 <h1>All Tasks</h1>
@@ -28,4 +26,5 @@
 </form:form>
 
 </body>
-</html>
+
+<%@ include file="partials/footer.jsp" %>
