@@ -12,7 +12,8 @@
     <title>${pageTitle}</title>
 
     <link rel="stylesheet" href="<c:url value='/scripts/css/main.css' />" type="text/css"/>
-    <script type="text/javascript" src="<c:url value='/scripts/lib/jquery-1.10.2.js' />"></script>
-
+    <link rel="stylesheet" href="<c:url value='/scripts/css/TimeCircles.css' />" type="text/css"/>
+    <script type="text/javascript" src="<c:url value='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' />"></script>
+    <script type="text/javascript" src="<c:url value='/scripts/js/TimeCircles.js' />"></script>
 </head>
 
