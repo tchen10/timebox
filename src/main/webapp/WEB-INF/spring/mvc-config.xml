@@ -11,11 +11,7 @@
 
     <mvc:view-controller path="/" view-name="home" />
 
-    <!--<mvc:resources mapping="/scripts/**" location="/scripts/" />-->
-    <!--<mvc:resources mapping="/styles/**" location="/styles/" />-->
-    <!--<mvc:resources mapping="/images/**" location="/images/" />-->
-    <!--<mvc:resources mapping="/humans.txt" location="/humans.txt" />-->
-    <!--<mvc:resources mapping="/favicon.ico" location="/images/favicon.ico" />-->
+    <mvc:resources mapping="/resources/**" location="/resources/" cache-period="31556926" />
 
     <!-- Resolves view names to protected .jsp resources within the /WEB-INF/views directory -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -23,12 +19,5 @@
         <property name="suffix" value=".jsp" />
         <property name="contentType" value="text/html;charset=utf-8" />
     </bean>
-
-    <!--<mvc:interceptors>-->
-        <!--<mvc:interceptor>-->
-            <!--<mvc:mapping path="/**"/>-->
-            <!--<bean class="com.trailblazers.freewheelers.web.interceptors.AccountDetailsInterceptor"></bean>-->
-        <!--</mvc:interceptor>-->
-    <!--</mvc:interceptors>-->
 
 </beans>

@@ -9,6 +9,8 @@
 
 <h2>Add Task</h2>
 
+<div class="timer"></div>
+
 <form:form id="addTask" action="" method="POST" modelAttribute="task">
 
     <div>
