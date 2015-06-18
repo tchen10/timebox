@@ -9,7 +9,10 @@
 
 <h2>Add Task</h2>
 
-<div class="timer"></div>
+<label>Set Timer(Seconds): </label><input id="timerInput"/>
+
+<button class="timerButton start">Start</button> <button class="timerButton record">Record Time Spent</button> <button class="timerButton reset">Reset Timer</button>
+<div class="timer" style="width:75%; margin: 0 auto"></div>
 
 <form:form id="addTask" action="" method="POST" modelAttribute="task">
 

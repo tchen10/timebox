@@ -1,0 +1,14 @@
+.start {
+    background-color: green;
+}
+
+.stop {
+    background-color: red;
+}
+
+.timerButton {
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px
+}

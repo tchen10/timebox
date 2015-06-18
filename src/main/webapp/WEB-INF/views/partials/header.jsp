@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="<c:url value='/resources/css/main.css'/>" type="text/css"/>
     <link rel="stylesheet" href="<c:url value='/resources/css/TimeCircles.css' />" type="text/css"/>
-    <script type="text/javascript" src="<c:url value='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' />"></script>
+    <script type="text/javascript" src="<c:url value='/resources/js/jquery-1.11.3.min.js' />"></script>
     <script type="text/javascript" src="<c:url value='/resources/js/TimeCircles.js' />"></script>
     <script type="text/javascript" src="<c:url value='/resources/js/timer.js' />"></script>
 </head>
